@@ -206,6 +206,39 @@ ul {
     color: #ff8243;
 }
 
+.banner-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-desc h5 {
+ width: 52vw;
+ margin: 2rem 0;
+ padding: 0.5rem;
+ justify-content: center;
+ align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    .banner-btn {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    }
+
+    .banner-btn img {
+        margin: 0 auto;
+    }
+
+    .about-desc h5 {
+        width: 90vw;
+    }
+}
+
+.about-desc p {
+    padding: 0.5rem;
+}
+
 @media screen and (min-width: 992px) {
     .menu-toggle {
         display: none;
