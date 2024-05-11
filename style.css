@@ -5,7 +5,7 @@ font-family: 'Poppins', sans-serif; */
 body {
     font-family: 'Outfit', sans-serif;
     text-rendering: optimizeLegibility !important;
-    background: #f3f3f5;
+    background: #6426DC;
 }
 
 .body-fixed {
@@ -763,7 +763,7 @@ ul {
 }
 
 .h1-title {
-    font-size: 90px;
+    font-size: 70px;
     line-height: 108px;
     text-transform: capitalize;
     margin-bottom: 25px;
@@ -771,7 +771,7 @@ ul {
 }
 
 .h1-title span {
-    color: #6426DC;
+    color: #ffffff;
     background-image: linear-gradient(0deg, rgb(13 13 37 /8%), rgb(13 13 37 /8%));
     background-size: 100% 15px;
     background-position: 0 90%;
@@ -780,14 +780,11 @@ ul {
     transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #0d0d25;
-    font-family: 'Playfair Display', serif;
+.h2-title {
+    font-size: 90px;
+    line-height: 108px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
     font-weight: 900;
     color: #30E3DF;
 }
@@ -1319,12 +1316,12 @@ p {
 
 .swiper-button-prev:hover {
     box-shadow: inset 5px 5px 20px #d4d4d4, inset -5px -5px 20px #ffffff;
-    color: #fcbc30;
+    color: #30E3DF;
 }
 
 .swiper-button-next:hover {
     box-shadow: inset -5px 5px 20px #d4d4d4, inset 5px -5px 20px #ffffff;
-    color: #fcbc30;
+    color: #30E3DF;
 }
 
 .swiper-pagination {
@@ -1774,13 +1771,13 @@ p {
 
 @media (max-width: 1399px) {
     .h1-title {
-        font-size: 80px;
-        line-height: 90px;
+        font-size: 60px;
+        line-height: 55px;
     }
 
     .h3-title {
-        font-size: 26px;
-        line-height: 36px;
+        font-size: 55px;
+        line-height: 55px;
     }
 
     .h4-title {
@@ -2273,6 +2270,7 @@ footer {
     background-color: #f8f9fa;
     padding: 20px;
     text-align: center;
+    margin-top: 60px;
 }
 
 .footer__container {
