@@ -226,6 +226,11 @@ ul {
     align-items: center;
 }
 
+.about-desc p {
+    padding: 0.5rem;
+}
+
+
 @media screen and (max-width: 992px) {
     .banner-btn {
         display: grid;
@@ -240,10 +245,6 @@ ul {
     .about-desc h5 {
         width: 90vw;
     }
-}
-
-.about-desc p {
-    padding: 0.5rem;
 }
 
 /* Teams */
@@ -348,10 +349,94 @@ ul {
     height: 220px;
 }
 
+@media screen and (max-width: 600px) {
+    .teams-title {
+        text-align: center;
+        margin-right: 50px;
+    }
+
+    .line1,
+    .line2 {
+        display: none;
+    }
+
+    .container-line1 {
+        margin: 0 75px 0 0;
+    }
+
+    .container-line2 {
+        margin: 0 40px 0 0;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        width: 250px;
+        height: auto;
+    }
+
+    .profile-card img {
+        width: auto;
+    }
+
+    .card3 {
+        margin: 0 60px 0 0;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        position: relative;
+    }
+
+    .line1,
+    .line2 {
+        display: none;
+    }
+
+    .container-line2 {
+        margin-left: 20px;
+    }
+
+    .profile-card {
+        width: 700px;
+        height: 200px;
+    }
+
+    .card3 {
+        width: 700px;
+        margin-left: 200px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1026px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .card1,
+    .card2 {
+        width: 900px;
+        height: auto;
+    }
+
+    .line1,
+    .line2 {
+        display: block;
+    }
+
+    .card3 {
+        width: 700px;
+        margin-left: -10px;
+    }
+}
+
 /* service-section */
 .service-section {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 60px;
@@ -400,6 +485,59 @@ ul {
     font-size: 1.25rem;
     line-height: 2rem;
     text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .box-service {
+        height: 1200px;
+        margin-bottom: -970px;
+    }
+
+    .service-h1-title {
+        font-size: 1.5rem;
+    }
+
+    .service-list {
+        display: flex;
+        flex-direction: column;
+        top: -10px;
+    }
+
+    .service-card {
+        width: 280px;
+        height: 400px;
+    }
+
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    .box-service {
+        height: 800px;
+        margin-bottom: -550px;
+    }
+
+    .service-h1-title {
+        font-size: 1.6rem;
+    }
+
+    .service-list {
+        flex-direction: column;
+        top: -10px;
+    }
+
+    .service-card {
+        width: 500px;
+        height: auto;
+    }
+
+    .service-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .service-card p {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 992px) {
