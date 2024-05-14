@@ -592,6 +592,7 @@ ul {
     transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
 }
 
+
 .h3-title {
     font-size: 70px;
     line-height: 108px;
@@ -611,6 +612,34 @@ ul {
     display: inline;
     transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
 }
+
+.h4-title span {
+    color: #000000;
+    font-family: 'Bowlby One', sans-serif;
+    font-weight: 1000;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.h5-title {
+    font-size: 55px;
+    line-height: 108px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    font-weight: 900;
+    color: #30E3DF;
+}
+
+.h5-title span {
+    color: #6426DC;
+    background-image: linear-gradient(0deg, #30E3DF, #30E3DF);
+    background-size: 100% 15px;
+    background-position: 0 90%;
+    background-repeat: no-repeat;
+    display: inline;
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
@@ -1344,7 +1373,7 @@ p {
 }
 
 .blog-text .h4-title:hover {
-    color: #ff8243;
+    color: #30E3DF;
 }
 
 .blog-date {
@@ -1412,6 +1441,10 @@ p {
 
 .newsletter-box-text .h2-title {
     color: #ffffff;
+}
+
+.newsletter-box-text .h5-title {
+    color: #30E3DF;
 }
 
 .bg-overlay {
@@ -1979,4 +2012,321 @@ footer {
   .banner-btn img {
     max-width: 100%; /* Untuk memastikan gambar tidak melebihi lebar kontainer */
   }
+ 
+
+
+  /* Teams */
+  .teams-section {
+      margin: auto 170px;
+  }
+  
+  .teams-title {
+      margin-left: 0px;
+      padding: 10px;
+      text-align: center;
+  }
+  
+  .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .container-line1 {
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+  }
+  
+  .container-line2 {
+      display: flex;
+      align-items: center;
+      margin-left: 70px;
+  }
+  
+  .profile-card {
+      display: flex;
+      flex-direction: row;
+      background-color: #ffffff;
+      border: 1px solid #000000;
+      padding: 0;
+      margin: 20px;
+      width: 1000px;
+      height: 200px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-card img {
+      width: 30%;
+      height: auto;
+      object-position: center;
+      object-fit: cover;
+      border-radius: 5px 0 0 5px;
+  }
+  
+  .team-desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 15px;
+  }
+  
+  .team-desc h2 {
+      font-size: 1.85rem;
+  }
+  
+  .team-desc p {
+      padding: 2.5px;
+  }
+  
+  .social-icons {
+      margin-top: 15px;
+      font-size: 1.3rem;
+      text-decoration: none;
+  }
+  
+  .social-icons a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: black;
+  }
+  
+  .card1 {
+      margin-right: 0;
+  }
+  
+  .card2 {
+      margin-left: 0;
+  }
+  
+  .card3 {
+      margin-right: 200px;
+      width: 850px;
+  }
+  
+  .card3 img {
+      width: 25%;
+  }
+  
+  .line1,
+  .line2 {
+      margin-bottom: -90px;
+      width: auto;
+      height: 220px;
+  }
+  
+  @media screen and (max-width: 600px) {
+      .teams-title {
+          text-align: center;
+          margin-right: 50px;
+      }
+  
+      .line1,
+      .line2 {
+          display: none;
+      }
+  
+      .container-line1 {
+          margin: 0 75px 0 0;
+      }
+  
+      .container-line2 {
+          margin: 0 40px 0 0;
+      }
+  
+      .profile-card {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          justify-self: center;
+          width: 250px;
+          height: auto;
+      }
+  
+      .profile-card img {
+          width: auto;
+      }
+  
+      .card3 {
+          margin: 0 60px 0 0;
+      }
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+      .container {
+          position: relative;
+      }
+  
+      .line1,
+      .line2 {
+          display: none;
+      }
+  
+      .container-line2 {
+          margin-left: 20px;
+      }
+  
+      .profile-card {
+          width: 700px;
+          height: 200px;
+      }
+  
+      .card3 {
+          width: 700px;
+          margin-left: 200px;
+      }
+  }
+  
+  @media screen and (min-width: 1024px) and (max-width: 1026px) {
+  
+      .container {
+          padding: 20px;
+      }
+  
+      .card1,
+      .card2 {
+          width: 900px;
+          height: auto;
+      }
+  
+      .line1,
+      .line2 {
+          display: block;
+      }
+  
+      .card3 {
+          width: 700px;
+          margin-left: -10px;
+      }
+  }
+  
+  /* service-section */
+  .service-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 60px;
+  }
+  
+  .service-h1-title {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 3rem;
+      color: #000;
+  }
+  
+  .box-service {
+      background-color: rgba(255, 255, 255, 1);
+      width: auto;
+      height: 307px;
+      border-radius: 10px;
+  }
+  
+  .service-list {
+      display: inline-flex;
+      margin-top: -150px;
+  }
+  
+  .service-card {
+      background-color: rgba(104, 119, 200, 1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      height: auto;
+      margin: 20px;
+      padding: 20px;
+      gap: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+      color: #DCECF3;
+  }
+  
+  .service-card h3 {
+      font-size: 2rem;
+  }
+  
+  .service-card p {
+      font-size: 1.25rem;
+      line-height: 2rem;
+      text-align: center;
+  }
+  
+  @media screen and (max-width: 600px) {
+      .box-service {
+          height: 1200px;
+          margin-bottom: -970px;
+      }
+  
+      .service-h1-title {
+          font-size: 1.5rem;
+      }
+  
+      .service-list {
+          display: flex;
+          flex-direction: column;
+          top: -10px;
+      }
+  
+      .service-card {
+          width: 280px;
+          height: 400px;
+      }
+  
+  
+  }
+  
+  @media screen and (min-width: 600px) and (max-width: 992px) {
+      .box-service {
+          height: 800px;
+          margin-bottom: -550px;
+      }
+  
+      .service-h1-title {
+          font-size: 1.6rem;
+      }
+  
+      .service-list {
+          flex-direction: column;
+          top: -10px;
+      }
+  
+      .service-card {
+          width: 500px;
+          height: auto;
+      }
+  
+      .service-card h3 {
+          font-size: 1.5rem;
+      }
+  
+      .service-card p {
+          font-size: 1rem;
+      }
+  }
+
+
+  .centered-text {
+    text-align: center;
+    position: relative;
+  }
+  
+  .centered-text .h2-title {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+  
+
+  .centered-text img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
  
